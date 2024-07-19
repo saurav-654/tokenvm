@@ -12,12 +12,14 @@ import (
 )
 
 const (
-	// TODO: choose a human-readable part for your hyperchain
-	HRP = ""
-	// TODO: choose a name for your hyperchain
-	Name = ""
-	// TODO: choose a token symbol
-	Symbol = ""
+	// Choose a human-readable part for your hyperchain
+	HRP = "example"
+
+	// Choose a name for your hyperchain
+	Name = "examplechain"
+
+	// Choose a token symbol
+	Symbol = "EXC"
 )
 
 var ID ids.ID
@@ -35,6 +37,7 @@ func init() {
 // Instantiate registry here so it can be imported by any package. We set these
 // values in [controller/registry].
 var (
-	ActionRegistry *codec.TypeParser[chain.Action, *warp.Message, bool]
-	AuthRegistry   *codec.TypeParser[chain.Auth, *warp.Message, bool]
+	ActionRegistry *codec.TypeParser[chain.Action, *warp.Message, bool] = codec.NewTypeParser[chain.Action, *warp.Message, bool]()
+
+	AuthRegistry *codec.TypeParser[chain.Auth, *warp.Message, bool] = codec.NewTypeParser[chain.Auth, *warp.Message, bool]()
 )
