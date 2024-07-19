@@ -435,6 +435,11 @@ _In the world of Avalanche, we refer to short-lived, test Subnets as Devnets._
 To programaticaly deploy `tokenvm` to a distributed cluster of nodes running on
 your own custom network or on Fuji, check out this [doc](DEVNETS.md).
 
+## Output
+![Screenshot (2)](https://github.com/user-attachments/assets/45db8b5c-db2d-4349-9245-6d5a63655974)
+![Screenshot (1)](https://github.com/user-attachments/assets/cede0214-7565-4fc6-9808-9bcb676dfccf)
+
+
 ## Future Work
 _If you want to take the lead on any of these items, please
 [start a discussion](https://github.com/ava-labs/hypersdk/discussions) or reach
